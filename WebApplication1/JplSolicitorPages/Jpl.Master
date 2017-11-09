@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Jpl.master.cs" Inherits="WebApplication1.JplSolicitorPages.Jpl" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="color:white; background-color:black;">
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="/MainChallenges.aspx">Challenges <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item-active">
+                    <a class="nav-link" href="#">JPL Success Stories</a>
+                  </li>
+                  <li class="nav-item-active">
+                      <a class="nav-link" href="#">About JPL</a>
+                  </li>
+                    <li class="nav-item-active">
+                        <a class="nav-link" href="#">Edit Account</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/JplSolicitorPages/AppendToChallengesDatabaseTest.aspx">Submit Challenge</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">My Challenges</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+              </div>
+            </nav>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+</body>
+</html>
